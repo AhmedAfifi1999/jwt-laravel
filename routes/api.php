@@ -25,7 +25,7 @@ Route::group(["middleware" => ["auth:api"]], function () {
 //Course
     Route::get("total-courses", [CourseConrotller::class, "totalCourses"]);
     Route::post("course-enrol", [CourseConrotller::class, "courseEnrollment"]);
-    Route::get("delete-course/{id}", [CourseConrotller::class, "deleteCourse"]);
+        Route::get("delete-course/{id}", [CourseConrotller::class, "deleteCourse"]);
 
 });
 
